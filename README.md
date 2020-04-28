@@ -20,8 +20,7 @@ Or use import/require in your Javascript file:
  
 **Usage**
      
-1. Create typical menu-toggler.
-2. Create mobile navigation component with any nesting and toggle elements. 
+Create typical navigation structure with nested lists. 
       
          <ul class="header-nav">
            <li>
