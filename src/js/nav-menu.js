@@ -23,7 +23,7 @@
       let menuElements = document.querySelectorAll('.header-menu > li > a');
       menuElements.forEach(menuElement => {
         menuElement.classList.remove('active');
-      });
+    });
     }
 
     init() {
@@ -71,14 +71,16 @@
 
           document.body.addEventListener('mouseover', (event) => {
             if (!event.target.closest('.header-menu')) {
-              relativeLink.classList.remove('active')
-            }
-          });
+            relativeLink.classList.remove('active')
+          }
+        });
 
         })
       }
     }
   }
+
+  window.NavMenu = NavMenu;
 
   return NavMenu;
 
