@@ -49,7 +49,7 @@ Create typical navigation structure with nested lists.
  
        document.addEventListener('DOMContentLoaded', function () {
          new NavMenu({
-           nav: document.querySelector('.header-nav'),
+           nav: '.header-nav',
            preventParentClick: true
          });
        });

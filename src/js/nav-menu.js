@@ -11,27 +11,27 @@
   class NavMenu {
 
     constructor(options = {}) {
-      this.nav = options.nav;
-      this.nav.classList.add('header-menu');
-
+      this.nav = typeof options.nav === 'string' ? document.querySelector(options.nav) : options.nav;
       this.preventParentClick = options.preventParentClick || false;
 
-      this.init();
+      this.addClassesOnInit();
+      this.preventParentLink();
+      this.initMouseEvents();
     }
 
     static clearClasses() {
       let menuElements = document.querySelectorAll('.header-menu > li > a');
+
       menuElements.forEach(menuElement => {
         menuElement.classList.remove('active');
-    });
+      });
     }
 
-    init() {
-      this.initMouseEvents();
-      this.initPreventParentClick();
+    addClassesOnInit() {
+      this.nav.classList.add('header-menu');
     }
 
-    initPreventParentClick() {
+    preventParentLink() {
 
       let that = this;
 
