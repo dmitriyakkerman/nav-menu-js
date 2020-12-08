@@ -51,7 +51,8 @@ Create typical navigation structure with nested lists.
          
 **Initialization**
 
-Specify root selector(string or DOM node) in "nav" option and also preventParentClick option for preventing click event on parent links which have child elements("false" by default):
+1. Specify root selector(string or DOM node) in "nav" option.
+2. Specify "preventParentClick" option for preventing click event on parent links which have child elements("false" by default).
  
        document.addEventListener('DOMContentLoaded', function () {
          new NavMenu({
