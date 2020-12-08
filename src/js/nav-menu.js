@@ -32,7 +32,6 @@
     }
 
     preventParentLink() {
-
       let that = this;
 
       let headerSubmenus = document.querySelectorAll('.header-menu > li > a + ul');
@@ -49,7 +48,6 @@
     }
 
     initMouseEvents() {
-
       let that = this;
 
       let headerSubmenus = document.querySelectorAll('.header-menu > li > a + ul');
