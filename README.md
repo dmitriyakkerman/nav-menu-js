@@ -28,7 +28,7 @@ Or use import/require in your Javascript file:
      
 Create typical navigation structure with nested lists. 
       
-         <ul class="header-nav">
+         <ul class="header-nav" role="navigation" aria-label="Header links">
            <li>
              <a href="">Home</a>
            </li>
