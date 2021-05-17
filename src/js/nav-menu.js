@@ -9,11 +9,9 @@
 }(typeof self !== 'undefined' ? self : this, function () {
 
   class NavMenu {
-
     constructor(options = {}) {
       this.nav = typeof options.nav === 'string' ? document.querySelector(options.nav) : options.nav;
       this.preventParentClick = options.preventParentClick || false;
-
       this.addClassesOnInit();
       this.preventParentLink();
       this.initMouseEvents();
@@ -54,7 +52,6 @@
       let relativeLinks = document.querySelectorAll('.header-menu > li > a');
 
       if(headerSubmenus) {
-
         relativeLinks.forEach(function (relativeLink) {
 
           relativeLink.addEventListener('mouseover', function() {
@@ -69,11 +66,11 @@
 
           document.body.addEventListener('mouseover', (event) => {
             if (!event.target.closest('.header-menu')) {
-            relativeLink.classList.remove('active')
-          }
-        });
+              relativeLink.classList.remove('active')
+            }
+          });
 
-        })
+        });
       }
     }
   }

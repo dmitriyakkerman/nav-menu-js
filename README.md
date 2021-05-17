@@ -1,3 +1,5 @@
+Simple JS navigation module(includes links "click" and "mouseover" events)" for your website, which gives you possibility to get rid of routine.
+
 **Example:**
 
   https://codepen.io/mickyholbrook/pen/GRjqwJj
@@ -12,15 +14,15 @@
     
 Put the script at the bottom of your markup: 
 
-    <script src="./dist/js/nav-menu.js"></script>    
+    <script src="./dist/js/nav-menu.min.js"></script>    
    
 Or use import/require in your Javascript file:
     
-    const NavMenu = require('./dist/js/nav-menu.js');
+    const NavMenu = require('./dist/js/nav-menu.min.js');
     
     or
     
-    import NavMenu from './dist/js/nav-menu.js';
+    import NavMenu from './dist/js/nav-menu.min.js';
  
 **Usage**
      
