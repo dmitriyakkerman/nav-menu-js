@@ -12,18 +12,10 @@ Simple JS navigation module(includes links "click" and "mouseover" events)" for 
     
 **Javascript**    
     
-Put the script at the bottom of your markup: 
+Put the module script at the bottom of your markup: 
 
-    <script src="./dist/js/nav-menu.min.js"></script>    
-   
-Or use import/require in your Javascript file:
-    
-    const NavMenu = require('./dist/js/nav-menu.min.js');
-    
-    or
-    
-    import NavMenu from './dist/js/nav-menu.min.js';
- 
+    <script src="./dist/js/nav-menu.min.js"></script>  
+
 **Usage**
      
 Create typical navigation structure with nested lists. 
@@ -56,9 +48,30 @@ Create typical navigation structure with nested lists.
 1. Specify root selector(string or DOM node) in "nav" option.
 2. Specify "preventParentClick" option for preventing click event on parent links which have child elements("false" by default).
  
+        //Initialization with script tag
+ 
+        <script>
+               document.addEventListener('DOMContentLoaded', function () {
+                 new NavMenu({
+                   nav: '.header-nav',
+                   preventParentClick: true
+                 });
+               });
+        </script>
+        
+    or
+    
+       //Initialization by creating [filename].js file and connecting in a script tag
+        
+       // init.js
+        
        document.addEventListener('DOMContentLoaded', function () {
          new NavMenu({
            nav: '.header-nav',
            preventParentClick: true
          });
-       });
+       }); 
+       
+       <script src="init.js"></script>
+    
+    

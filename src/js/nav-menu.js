@@ -12,6 +12,7 @@
     constructor(options = {}) {
       this.nav = typeof options.nav === 'string' ? document.querySelector(options.nav) : options.nav;
       this.preventParentClick = options.preventParentClick || false;
+
       this.addClassesOnInit();
       this.preventParentLink();
       this.initMouseEvents();
@@ -40,8 +41,8 @@
 
           submenuToggler.addEventListener('click', function (e) {
             e.preventDefault()
-          })
-        })
+          });
+        });
       }
     }
 
@@ -52,6 +53,7 @@
       let relativeLinks = document.querySelectorAll('.header-menu > li > a');
 
       if(headerSubmenus) {
+
         relativeLinks.forEach(function (relativeLink) {
 
           relativeLink.addEventListener('mouseover', function() {
