@@ -1,7 +1,7 @@
 {
   "name": "nav-menu",
   "version": "1.0.0",
-  "description": "Javascript navigation module(includes links \"click\" and \"mouseover\" events)",
+  "description": "Simple JS multilevel navigation module(includes links \"click\" and \"mouseover\" events)",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",

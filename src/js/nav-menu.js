@@ -19,7 +19,7 @@
     }
 
     static clearClasses() {
-      let menuElements = document.querySelectorAll('.header-menu > li > a');
+      let menuElements = document.querySelectorAll('.header-menu li > a');
 
       menuElements.forEach(menuElement => {
         menuElement.classList.remove('active');
@@ -33,7 +33,7 @@
     preventParentLink() {
       let that = this;
 
-      let headerSubmenus = document.querySelectorAll('.header-menu > li > a + ul');
+      let headerSubmenus = document.querySelectorAll('.header-menu li > a + ul');
 
       if(that.preventParentClick && headerSubmenus) {
         headerSubmenus.forEach(function(headerSubmenu) {
@@ -49,8 +49,8 @@
     initMouseEvents() {
       let that = this;
 
-      let headerSubmenus = document.querySelectorAll('.header-menu > li > a + ul');
-      let relativeLinks = document.querySelectorAll('.header-menu > li > a');
+      let headerSubmenus = document.querySelectorAll('.header-menu li > a + ul');
+      let relativeLinks = document.querySelectorAll('.header-menu li > a');
 
       if(headerSubmenus) {
 
