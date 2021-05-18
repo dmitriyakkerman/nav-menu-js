@@ -1,5 +1,5 @@
 {
-  "name": "nav-menu",
+  "name": "nav-menu-js",
   "version": "1.0.0",
   "description": "Simple JS navigation module(includes links \"click\" and \"mouseover\" events)\" for your website, which gives you possibility to get rid of routine.",
   "main": "index.js",
