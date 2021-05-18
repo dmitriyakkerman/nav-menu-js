@@ -19,7 +19,7 @@
     }
 
     static clearClasses() {
-      let menuElements = document.querySelectorAll('.header-menu li > a');
+      let menuElements = document.querySelectorAll('.nav-menu li > a');
 
       menuElements.forEach(menuElement => {
         menuElement.classList.remove('active');
@@ -27,13 +27,13 @@
     }
 
     addClassesOnInit() {
-      this.nav.classList.add('header-menu');
+      this.nav.classList.add('nav-menu');
     }
 
     preventParentLink() {
       let that = this;
 
-      let headerSubmenus = document.querySelectorAll('.header-menu li > a + ul');
+      let headerSubmenus = document.querySelectorAll('.nav-menu li > a + ul');
 
       if(that.preventParentClick && headerSubmenus) {
         headerSubmenus.forEach(function(headerSubmenu) {
@@ -49,8 +49,8 @@
     initMouseEvents() {
       let that = this;
 
-      let headerSubmenus = document.querySelectorAll('.header-menu li > a + ul');
-      let relativeLinks = document.querySelectorAll('.header-menu li > a');
+      let headerSubmenus = document.querySelectorAll('.nav-menu li > a + ul');
+      let relativeLinks = document.querySelectorAll('.nav-menu li > a');
 
       if(headerSubmenus) {
 
@@ -67,7 +67,7 @@
           });
 
           document.body.addEventListener('mouseover', (event) => {
-            if (!event.target.closest('.header-menu')) {
+            if (!event.target.closest('.nav-menu')) {
               relativeLink.classList.remove('active')
             }
           });
