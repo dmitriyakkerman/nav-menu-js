@@ -20,7 +20,7 @@ Put the module script at the bottom of your markup:
      
 Create typical navigation structure with nested lists. 
       
-         <ul class="header-nav">
+         <ul class="header-nav" role="navigation" aria-label="Header links">
              <li>
                  <a href="">Home</a>
              </li>
