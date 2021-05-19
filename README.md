@@ -6,15 +6,17 @@ Simple JS navigation module(includes links "click" and "mouseover" events)" for 
 
   https://codepen.io/mickyholbrook/pen/GRjqwJj
 
-**Styles:**
+**Installation:**
+
+    1. Go to your project directory
+    2. git clone https://github.com/dmitriyakkerman/nav-menu-js.git .
   
   Put the required stylesheet link in HEAD tag:
   
     <link rel="stylesheet" href="./dist/css/nav-menu.min.css">
     
-**Javascript**    
     
-Put the module script at the bottom of your markup: 
+  Put the module script at the bottom of your markup: 
 
     <script src="./dist/js/nav-menu.min.js"></script>  
 
