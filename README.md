@@ -8,13 +8,28 @@ Simple JS navigation module(includes links "click" and "mouseover" events)" for 
 
 **Installation:**
 
+***npm***
+
+    npm i nav-menu-js
+    
+Load the required JS to your entry JS file:
+
+    let NavMenu = require('nav-menu-js');   
+    or    
+    import NavMenu from 'nav-menu-js';
+    
+Load the required stylesheet to your entry CSS file:
+    
+    @import "node_modules/nav-menu-js/index";
+    
+***Cloning git repository***
+
     1. Go to your project directory
     2. git clone https://github.com/dmitriyakkerman/nav-menu-js.git .
   
   Put the required stylesheet link in HEAD tag:
   
     <link rel="stylesheet" href="./dist/css/nav-menu.min.css">
-    
     
   Put the module script at the bottom of your markup: 
 
