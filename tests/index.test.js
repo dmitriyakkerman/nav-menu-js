@@ -2,7 +2,8 @@
  * @jest-environment jsdom
  */
 
-let NavMenu = require('../src/js/nav-menu');
+const NavMenu = require('../src/js/nav-menu');
+const navMenuMarkup = require('./nav-menu-markup');
 
 describe('NavMenu testing', () => {
 
@@ -11,32 +12,7 @@ describe('NavMenu testing', () => {
         expect(NavMenu).toBeDefined();
     });
 
-    document.body.innerHTML = `
-        <ul class="header-nav" role="navigation" aria-label="Header links">
-             <li>
-                 <a href="">Home</a>
-             </li>
-             <li>
-                 <a href="">Services</a>
-                 <ul>
-                     <li>
-                         <a href="">Service 1</a>
-                     </li>
-                     <li>
-                         <a href="">Service 2</a>
-                         <ul>
-                             <li>
-                                 <a href="">Service 2.1</a>
-                             </li>
-                             <li>
-                                 <a href="">Service 2.2</a>
-                             </li>
-                         </ul>
-                     </li>
-                 </ul>
-             </li>             
-         </ul>    
-    `;
+    document.body.innerHTML = navMenuMarkup;
 
     let navMenuInstance = new NavMenu({
         nav: '.header-nav',
