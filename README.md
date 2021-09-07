@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/dmitriyakkerman/nav-menu-js.svg?branch=master)](https://travis-ci.org/github/dmitriyakkerman/nav-menu-js)
 
-Simple JS navigation module(includes links "click" and "mouseover" events)" for your website, which gives you possibility to get rid of routine.
+Javascript navigation module(includes links "click" and "mouseover" events)" for your website, which gives you possibility to get rid of routine.
 
 **Example:**
 
